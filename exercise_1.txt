@@ -1,0 +1,94 @@
+create table SEMP
+(
+	EMPNO char(4),
+    EMPNAME char(20),
+    BASIC float(9,2),
+    DEPTNO char(2),
+    DEPTHEAD char(4)
+);
+
+create table SDEPT
+(
+	DEPTNO char(2),
+    DEPTNAME char(15)
+    );
+    
+    insert INTO SDEPT
+    value ('10','Development');
+    select * from SDEPT 
+    
+    insert INTO SDEPT
+    value ('20','Training');    
+    select * from SDEPT 
+
+    insert into SEMP
+    value ('0001','SUNIL',6000,'10',null);
+
+    insert into SEMP
+    value ('0002','HIREN',8000,'20',null);
+    
+	insert into SEMP
+    value ('0003','ALI',4000,'10','0001');
+    
+    insert into SEMP
+    value ('0004','GEORGE',6000,null,'0002');
+
+	create table s;
+    (
+		`s#` char(2),
+        sname varchar(10),
+        status int(2),
+        city varchar(10)
+        );
+        
+        create table p
+        (
+         `p#` char(2),
+         pname varchar(10),
+         color varchar(10),
+         weight int(3),
+         city varchar(15)
+         )
+         
+         create table j 
+         (
+			 `j#` char(2),
+             jname varchar(10),
+             city varchar(10)
+			)
+            
+            create table spj
+		(
+			`s#` char(2),
+            `p#` char(2),
+            `j#` char(2),
+            qut int(4)
+            );
+            
+            /* que 5 */
+			select * from s ;
+            
+            /* que 6 */
+			select `s#`,sname from s ;
+	
+			/* que 7 */
+			select pname and color from p where city='London';
+		
+			/* que 8 */
+			select city from s where city='London' ;	
+
+			/* que 9 */
+			select city from s where city='Paris' or city='Athens';
+            
+            
+            /* que 10 */
+			select city from j where city='Athens';
+            
+		
+
+
+
+
+
+
+
