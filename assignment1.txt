@@ -1,0 +1,94 @@
+create database market;
+use market;
+create table SALESPEOPLE 
+(
+	snum int(4),
+    sname varchar(10),
+    city varchar(10),
+    comm  float(3.2)
+);
+create table CUSTOMERS 
+(
+	cnum int(4),
+    Cname varchar(10),
+    city varchar(10),
+    rating int(4),
+    snum int(4)
+);
+create table orders 
+(
+	onum int(4),
+    amt float(7,2) ,
+    odate date ,
+    cnum int(4),
+    snum int(4)
+);
+
+insert into SALESPEOPLE
+value (1001,'Peel','London',.12);
+
+select * from salespeople
+
+insert into SALESPEOPLE
+value (1002,'Serres','San Jose',.13);    
+
+insert into SALESPEOPLE
+value (1004,'Motika','London',.11);
+
+insert into SALESPEOPLE
+value (1007,'Rifkin','Barcelona',.15);
+  
+insert into SALESPEOPLE
+value (1003,'Axelrod','New York',.10);
+select * from salespeople
+
+insert into CUSTOMERS
+value (2001,'Hoffman','London',100,1001);
+
+insert into CUSTOMERS
+value (2002,'Giovanni','Rome',200,1003);
+
+insert into CUSTOMERS
+value (2003,'Liu','San Jose',200,1002);
+
+insert into CUSTOMERS
+value (2004,'Grass','Berlin',300,1002);
+
+insert into CUSTOMERS
+value (2006,'Clemens','London',100,1001);
+
+insert into CUSTOMERS
+value (2008,'Cisenrose','San Jose',300,1007);
+
+insert into CUSTOMERS
+value (2007,'Pereira','Rome',100,1004);
+
+insert into orders
+value (3001,18.69,'1990-10-3',2008,1007);
+
+insert into orders
+value (3003,767.19,'1990-10-3',2001,1001);
+
+insert into orders
+value (3002,1900.10,'1990-10-3',2007,1004);
+
+insert into orders
+value (3005,5160.45,'1990-10-3',2003,1002);
+
+insert into orders
+value (3006,1098.16,'1990-10-3',2008,1007);
+
+insert into orders
+value (3009,1713.23,'1990-10-4',2002,1003);
+
+insert into orders
+value (3007,75.75,'1990-10-4',2004,1002);
+
+insert into orders
+value (3008,4723.00,'1990-10-5',2006,1001);
+
+insert into orders
+value (3010,1309.95,'1990-10-6',2004,1002);
+
+insert into orders
+value (3011,9891.88,'1990-10-6',2006,100);
