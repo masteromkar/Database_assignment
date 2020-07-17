@@ -1,0 +1,12 @@
+1) Which field of the Customers table is the primary key?
+Ans- In the customers table the field 'cnum ' is primary key.primary key shound be always differnt value, which specify thea row.
+
+2) What is the 4th column of the Customers table?
+Ans- 4th column of the customer table is rating.
+
+3) What is another word for row? For column?
+Ans- row-tuple,entity,opportanity
+     column-attribute,method
+
+4) Why isn’t it possible to see the first five rows of a table?
+Ans-Beacause while inserting the row in database it get random position in database server hard disk and user table store its address accordingly.
