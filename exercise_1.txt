@@ -85,7 +85,22 @@ create table SDEPT
 			select city from j where city='Athens';
             
 		
-
+/* que 11 */
+        select pname , weight from p where weight >=10 and weight <=14;
+        
+/* que 12 */
+ select * from s where 'status'>=20;
+ 
+ /* que 13 */ 
+ select * from s where city != 'Londone' ;
+ 
+ /* que 14 */
+ 
+ select distinct city from s ;
+ 
+ /* que 15 */
+  select weight as "Weight in Grams",weight/1000 as "Weight in Miligrams" , weight*1000 as "Weight in Kilogram" from p;
+ 
 
 
 
